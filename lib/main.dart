@@ -1,4 +1,5 @@
 import 'package:authentication_task/login_screen.dart';
+import 'package:authentication_task/register_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,6 +17,7 @@ debugShowCheckedModeBanner: false,
 initialRoute: LoginScreen.routeName,
       routes: {
         LoginScreen.routeName : (context) => LoginScreen(),
+        RegisterScreen.routeName :(context) => RegisterScreen(),
       },
     );
   }
