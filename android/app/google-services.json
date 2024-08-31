@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "694751221829",
+    "project_id": "courses-project-fcf06",
+    "storage_bucket": "courses-project-fcf06.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:694751221829:android:8ea4d0dbaf914debcfab2c",
+        "android_client_info": {
+          "package_name": "com.example.authentication_task"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJgEdBKKsuthHueRaIo5mct41qRlmadeQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:694751221829:android:f2c9135bf43e974ccfab2c",
+        "android_client_info": {
+          "package_name": "com.myname.todolist"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJgEdBKKsuthHueRaIo5mct41qRlmadeQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
