@@ -1,15 +1,17 @@
+import 'package:flutter/animation.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-
 class CustomTextFormField extends StatelessWidget {
   String label;
   String hint;
-  TextInputType keyboardType;
+  TextInputType keyboardType =TextInputType.text ;
   bool obsecureText = false;
-  bool ispassword ;
+  bool ispassword =false;
+ String? Function(String?) validator ;
+ TextEditingController controller;
 
-   CustomTextFormField({required this.label,required this.hint,required this.keyboardType,this.obsecureText=false,this.ispassword=false});
+   CustomTextFormField({super .key,required this.label,required this.hint, this.keyboardType =TextInputType.text,this.obsecureText=false,this.ispassword=false, required this.validator,required this.controller});
 
   @override
   Widget build(BuildContext context) {
@@ -22,6 +24,7 @@ class CustomTextFormField extends StatelessWidget {
       onPressed: () {}         
     ):null
           ),
+          validator:validator ,
         ),
       ],
     );
