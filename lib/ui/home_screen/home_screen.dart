@@ -44,7 +44,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                   onPressed: () {
                     print("################################################################");
-                    provider.ChangeThemeMode(ThemeMode.light);
+                    provider.swapThemeMode();
                   }),
               IconButton(
                   icon: Icon(
