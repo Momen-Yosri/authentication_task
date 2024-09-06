@@ -16,13 +16,7 @@ class AppButton extends StatelessWidget {
           onTap();
         },
         child: Text(title,
-            style:
-                GoogleFonts.manrope(fontSize: 17, fontWeight: FontWeight.w600)),
-        style: ElevatedButton.styleFrom(
-          foregroundColor: Colors.white,
-          backgroundColor: Color(0xff004182),
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(0)),
-        ),
+       ),
       ),
     );
   }

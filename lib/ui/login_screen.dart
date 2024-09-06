@@ -28,7 +28,6 @@ class _LoginScreenState extends State<LoginScreen> {
         appBar: AppBar(
           title: Image.asset("assets/images/logo.png"),
           elevation: 0,
-          backgroundColor: Colors.white,
           actions: [
             IconButton(
                 icon: Icon(
@@ -49,9 +48,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   height: MediaQuery.of(context).size.height * 0.11,
                 ),
                 Text("Hi, Welcome Back! ",
-                    style: MyThemeData.lightTheme.textTheme.headlineLarge),
+                    style: MyThemeData.lightTheme.textTheme.bodyLarge),
                 Text("Hello again, you’ve been missed!",
-                    style: MyThemeData.lightTheme.textTheme.headlineSmall),
+                    style: MyThemeData.lightTheme.textTheme.bodySmall),
                 CustomTextFormField(
                   label: "Email",
                   hint: "Please enter your Email ",
@@ -91,7 +90,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text("Don’t have an account ? ",
-                        style: MyThemeData.lightTheme.textTheme.headlineSmall),
+                        style: MyThemeData.lightTheme.textTheme.bodySmall),
                     TextButton(
                         onPressed: () {
                           Navigator.pushReplacementNamed(
