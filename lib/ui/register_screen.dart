@@ -27,11 +27,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.white,
         appBar: AppBar(
           title: Image.asset("assets/images/logo.png"),
-          elevation: 0,
-          backgroundColor: Colors.white,
           actions: [
             IconButton(
                 icon: Icon(
@@ -54,9 +51,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       height: MediaQuery.of(context).size.height * 0.11,
                     ),
                     Text("Create an account",
-                        style: MyThemeData.lightTheme.textTheme.headlineLarge),
+                        style: MyThemeData.lightTheme.textTheme.bodyLarge),
                     Text("Connect with your friends today!",
-                        style: MyThemeData.lightTheme.textTheme.headlineSmall),
+                        style: MyThemeData.lightTheme.textTheme.bodySmall),
                     CustomTextFormField(
                       label: "Email",
                       hint: "Please enter your Email ",
@@ -132,7 +129,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       children: [
                         Text(
                           "Already have an account ?",
-                          style: MyThemeData.lightTheme.textTheme.headlineSmall,
+                          style: MyThemeData.lightTheme.textTheme.bodySmall,
                         ),
                         TextButton(
                             onPressed: () {

@@ -24,7 +24,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var provider = Provider.of<AppConfigProvider>(context);
-    print('xxxxxxxx');
     return  MaterialApp(
         debugShowCheckedModeBanner: false,
         initialRoute: HomeScreen.routeName,

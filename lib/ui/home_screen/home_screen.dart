@@ -43,7 +43,8 @@ class HomeScreen extends StatelessWidget {
                     size: 24,
                   ),
                   onPressed: () {
-                    print("################################################################");
+                    print(
+                        "################################################################");
                     provider.swapThemeMode();
                   }),
               IconButton(
@@ -118,19 +119,20 @@ class HomeScreen extends StatelessWidget {
                       width: 12,
                     ),
                     Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          "Flutter Basics Diploma ",
-                          style: MyThemeData.lightTheme.textTheme.bodyLarge,
-                          maxLines: 3,
-                          overflow: TextOverflow.ellipsis,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Flutter Basics Diploma ",
+                            style: MyThemeData.lightTheme.textTheme.bodyLarge,
+                            maxLines: 3,
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                          Spacer(),
+                          Text("250 Studens Enrolled",
+                              style:
+                                  MyThemeData.lightTheme.textTheme.bodyMedium),
+                        ],
                         ),
-                        Spacer(),
-                        Text("250 Studens Enrolled",
-                            style: MyThemeData.lightTheme.textTheme.bodyMedium),
-                      ],
-                    ),
                   ],
                 ),
               ),
